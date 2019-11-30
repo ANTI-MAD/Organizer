@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="311.0" prefWidth="334.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.StartWindowController">
+  <children>
+    <AnchorPane layoutX="68.0" layoutY="66.0" minHeight="200.0" prefHeight="200.0" prefWidth="252.0">
+      <children>
+        <Button fx:id="loginButton" layoutX="10.0" layoutY="15.0" mnemonicParsing="false" prefWidth="180.0" text="Войти" />
+        <Button fx:id="registrationButton" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" prefWidth="180.0" text="Зарегистрироваться" />
+        <Button fx:id="restorePasswordButton" layoutX="10.0" layoutY="105.0" mnemonicParsing="false" prefWidth="180.0" text="Забыл пароль" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
