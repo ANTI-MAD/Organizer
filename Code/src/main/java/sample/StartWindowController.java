@@ -20,63 +20,33 @@ public class StartWindowController {
     private Button restorePasswordButton;
 
     private Main main;
-    private StartWindowController startWindowController;
-    private static Stage stage;
-
-    private boolean bool = false;
 
     @FXML
     public void initialize() {
         main = new Main();
         WindowLoading windowLoading = new WindowLoading();
-        stage = new Stage();
-        LoginWindowController loginWindowController = new LoginWindowController();
 
 
         loginButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                //stage.close();
-                //windowLoading.loadWindow("LoginWindow.fxml", "Organizer - Вход в аккаунт", stage, main.getStage());
-                //main.getStage().close();
-
-                windowLoading.loadWindow("LoginWindow.fxml", "Organizer - Вход в аккаунт", stage, loginWindowController.getStage());
-                main.getStage().close();
-                //windowLoading.loadWindow("LoginWindow.fxml", "sdfa", stage, startWindowController.getStage());
+                windowLoading.loadWindow("LoginWindow.fxml", "Organizer - Вход в аккаунт", main.getStage());
             }
         });
 
         registrationButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                windowLoading.loadWindow("RegistrationWindow.fxml", "Organizer - Регистрация", stage, main.getStage());
-                //main.getStage().close();
+                windowLoading.loadWindow("RegistrationWindow.fxml", "Organizer - Регистрация", main.getStage());
             }
         });
 
         restorePasswordButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                windowLoading.loadWindow("RestorePasswordWindow1.fxml", "Organizer - Восстановление пароля", stage, main.getStage());
-                //main.getStage().close();
+                windowLoading.loadWindow("RestorePasswordWindow1.fxml", "Organizer - Восстановление пароля", main.getStage());
             }
         });
     }
 
-    /*private void loadWindow(String nameWindow, String nameTitle) {
-        try {
-            stage = new Stage();
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource(nameWindow));
-            stage.setTitle(nameTitle);
-            stage.setScene(new Scene(root));
-            stage.show();
-            main.getStage().close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }*/
-
-    public Stage getStage() {
-        return stage;
-    }
 }

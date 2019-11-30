@@ -12,7 +12,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         try {
-            //stage = primaryStage;
             stage = new Stage();
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("startWindow.fxml"));
             stage.setTitle("Organizer");
