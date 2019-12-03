@@ -5,3 +5,5 @@
 
 #### REQUIREMENTS ([RU](https://github.com/ANTI-MAD/Organizer/blob/master/Documentation/Requirements/Requirements.md))
 #### DIAGRAMS ([RU](https://github.com/ANTI-MAD/Organizer/blob/master/Documentation/Diagrams/diagrams.md))
+#### CODE ([RU](https://github.com/ANTI-MAD/Organizer/tree/master/Code))
+#### TESTING ([RU](https://github.com/ANTI-MAD/Organizer/blob/master/Testing/TestPlan.md))
